@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Question 3</title></head>
+<body>
+  <h2>Question 3: Movie Rating</h2>
+  <script>
+    function movieStatus(movie) {
+      const rating = movie.rating;
+      if (rating >= 9) console.log("Blockbuster");
+      else if (rating >= 8) console.log("Superhit");
+      else if (rating >= 6) console.log("Hit");
+      else if (rating >= 4) console.log("Average");
+      else console.log("Flop");
+    }
+
+    movieStatus({ name: "Movie A", rating: 8.2 });
+    movieStatus({ name: "Movie B", rating: 3.7 });
+  </script>
+</body>
+</html>

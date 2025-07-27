@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><title>Question 6</title></head>
+<body>
+  <h2>Question 6: Product Grouping</h2>
+  <script>
+    const store = {
+      products: [],
+      addProduct(product) {
+        this.products.push(product);
+      },
+      groupByCategory() {
+        const grouped = {};
+        this.products.forEach(p => {
+          if (!grouped[p.category]) {
+            grouped[p.category] = [];
+          }
+          grouped[p.category].push(p.name);
+        });
+        console.log("Grouped Products:", grouped);
+      }
+    };
+
+    store.addProduct({ name: "Mango", category: "Fruits", price: 30 });
+    store.addProduct({ name: "Carrot", category: "Vegetables", price: 15 });
+    store.addProduct({ name: "Banana", category: "Fruits", price: 10 });
+    store.groupByCategory();
+  </script>
+</body>
+</html>

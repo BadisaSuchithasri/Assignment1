@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head><title>Question 10</title></head>
+<body>
+  <h2>Question 10: Get Season</h2>
+  <script>
+    function getSeason(month) {
+      switch (month.toLowerCase()) {
+        case "december":
+        case "january":
+        case "february":
+          console.log("Winter");
+          break;
+        case "march":
+        case "april":
+        case "may":
+          console.log("Summer");
+          break;
+        case "june":
+        case "july":
+        case "august":
+          console.log("Monsoon");
+          break;
+        case "september":
+        case "october":
+        case "november":
+          console.log("Autumn");
+          break;
+        default:
+          console.log("Invalid month");
+      }
+    }
+    getSeason("March");
+    getSeason("October");
+  </script>
+</body>
+</html>

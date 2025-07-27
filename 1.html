@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Question 1</title></head>
+<body>
+  <h2>Question 1: Book Info</h2>
+  <script>
+    function printBookInfo(book) {
+      const title = book.title || "Unknown Title";
+      const author = book.author || "Unknown Author";
+      const year = book.year || "Unknown Year";
+      const genre = book.genre || "Unknown Genre";
+      console.log(Book : "${title} by ${author}, published in ${year}, Genre: ${genre}");
+    }
+    printBookInfo({ title: "1984", author: "George Orwell", year: 1949 });
+    printBookInfo({});
+  </script>
+</body>
+</html>

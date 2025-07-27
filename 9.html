@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Question 9</title></head>
+<body>
+  <h2>Question 9: Calculator</h2>
+  <script>
+    function calculator(a, b, op) {
+      switch (op) {
+        case '+': return a + b;
+        case '-': return a - b;
+        case '*': return a * b;
+        case '/': return b !== 0 ? a / b : "Divide by zero error";
+        case '%': return a % b;
+        default: return "Invalid operator";
+      }
+    }
+
+    console.log("Result:", calculator(10, 5, '*'));
+  </script>
+</body>
+</html>

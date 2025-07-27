@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Question 4</title></head>
+<body>
+  <h2>Question 4: Total Score</h2>
+  <script>
+    function totalScore(students) {
+      return students.reduce((sum, student) => sum + student.score, 0);
+    }
+
+    const result = totalScore([
+      { name: "Alice", score: 80 },
+      { name: "Bob", score: 90 },
+      { name: "Charlie", score: 70 }
+    ]);
+
+    console.log("Total Score:", result);
+  </script>
+</body>
+</html>

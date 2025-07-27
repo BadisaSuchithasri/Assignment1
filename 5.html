@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Question 5</title></head>
+<body>
+  <h2>Question 5: Second Topper</h2>
+  <script>
+    function secondTopper(students) {
+      const marksSet = [...new Set(students.map(s => s.marks))].sort((a, b) => b - a);
+      if (marksSet.length < 2) {
+        console.log("Not enough students to find second topper.");
+        return;
+      }
+      const second = marksSet[1];
+      const result = students.filter(s => s.marks === second);
+      result.forEach(s => console.log("${s.name} - ${s.marks}"));
+    }
+
+    secondTopper([
+      { name: "A", marks: 95 },
+      { name: "B", marks: 90 },
+      { name: "C", marks: 95 },
+      { name: "D", marks: 85 },
+      { name: "E", marks: 90 }
+    ]);
+  </script>
+</body>
+</html>

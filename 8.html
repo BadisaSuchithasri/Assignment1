@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Question 8</title></head>
+<body>
+  <h2>Question 8: Sort Strings</h2>
+  <script>
+    function sortStrings(arr) {
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+          if (arr[i] > arr[j]) {
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+          }
+        }
+      }
+      return arr;
+    }
+
+    console.log("Sorted Strings:", sortStrings(["banana", "apple", "cherry", "date"]));
+  </script>
+</body>
+</html>

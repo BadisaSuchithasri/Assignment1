@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Question 2</title></head>
+<body>
+  <h2>Question 2: Library Object</h2>
+  <script>
+    const library = {
+      books: [],
+      addBook(book) {
+        this.books.push(book);
+      },
+      listBooks() {
+        this.books.forEach((book, index) => {
+          console.log("${index + 1}. ${book.title} by ${book.author}");
+        });
+      }
+    };
+
+    library.addBook({ title: "Book A", author: "Author A" });
+    library.addBook({ title: "Book B", author: "Author B" });
+    library.listBooks();
+  </script>
+</body>
+</html>
